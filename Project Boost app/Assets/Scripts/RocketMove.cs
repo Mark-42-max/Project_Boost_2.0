@@ -38,7 +38,11 @@ public class RocketMove : MonoBehaviour
     {
         if (CrossPlatformInputManager.GetButtonDown("Left"))
         {
-            transform.Rotate((-1) * Vector3.one * rotateSpeed * Time.deltaTime);
+            transform.Rotate(Vector3.forward * rotateSpeed *Time.deltaTime);
+        }
+        else if (CrossPlatformInputManager.GetButtonDown("Right"))
+        {
+            transform.Rotate((-1) * Vector3.forward * rotateSpeed * Time.deltaTime);
         }
     }
 }
