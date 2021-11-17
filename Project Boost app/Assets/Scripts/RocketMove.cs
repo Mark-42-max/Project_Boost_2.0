@@ -7,6 +7,9 @@ using UnityStandardAssets.CrossPlatformInput;
 public class RocketMove : MonoBehaviour
 {
     private Rigidbody rb;
+
+    [SerializeField] private float thrustSpeed = 200.0f;
+    [SerializeField] private float rotateSpeed = 200.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +17,7 @@ public class RocketMove : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         ThrustRocket();
         RotateRocket();
@@ -24,19 +27,18 @@ public class RocketMove : MonoBehaviour
 
     private void ThrustRocket()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (CrossPlatformInputManager.GetButtonDown("Thrust"))
         {
-            rb.AddRelativeForce(Vector3.up * 8);
-            Debug.Log("Up");
+            thrustSpeed += 200;
+            rb.AddRelativeForce(Vector3.up * thrustSpeed * Time.deltaTime);
         }
     }
 
     private void RotateRocket()
     {
-        if (Input.GetKey(KeyCode.A))
+        if (CrossPlatformInputManager.GetButtonDown("Left"))
         {
-            transform.Rotate((-1) * Vector3.one * 5);
-            Debug.Log("Left");
+            transform.Rotate((-1) * Vector3.one * rotateSpeed * Time.deltaTime);
         }
     }
 }
