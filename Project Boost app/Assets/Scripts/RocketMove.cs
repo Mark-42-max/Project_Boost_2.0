@@ -23,26 +23,32 @@ public class RocketMove : MonoBehaviour
         RotateRocket();
     }
 
-
-
-    private void ThrustRocket()
+    public void ThrustRocket()
     {
-        if (CrossPlatformInputManager.GetButtonDown("Thrust"))
+        if (CrossPlatformInputManager.GetButton("Thrust"))
         {
-            thrustSpeed += 200;
-            rb.AddRelativeForce(Vector3.up * thrustSpeed * Time.deltaTime);
+               thrustSpeed += 10;
+               rb.AddRelativeForce(Vector3.up * thrustSpeed * Time.deltaTime);
+        }
+        else
+        {
+            thrustSpeed = 1130;
         }
     }
 
     private void RotateRocket()
     {
-        if (CrossPlatformInputManager.GetButtonDown("Left"))
+        rb.freezeRotation = true;
+
+        if (CrossPlatformInputManager.GetButton("Left"))
         {
-            transform.Rotate(Vector3.forward * rotateSpeed *Time.deltaTime);
+            transform.Rotate(Vector3.forward * rotateSpeed * Time.deltaTime);
         }
-        else if (CrossPlatformInputManager.GetButtonDown("Right"))
+        else if (CrossPlatformInputManager.GetButton("Right"))
         {
             transform.Rotate((-1) * Vector3.forward * rotateSpeed * Time.deltaTime);
         }
+
+        rb.freezeRotation = false;
     }
 }

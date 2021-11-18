@@ -342,8 +342,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -188.9, y: 15}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -188.9, y: 28}
+  m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &474347562
 MonoBehaviour:
@@ -500,6 +500,7 @@ GameObject:
   - component: {fileID: 593655476}
   - component: {fileID: 593655475}
   - component: {fileID: 593655479}
+  - component: {fileID: 593655480}
   - component: {fileID: 593655478}
   m_Layer: 5
   m_Name: Thrust
@@ -525,8 +526,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 17, y: 15}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 78, y: 28}
+  m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &593655475
 MonoBehaviour:
@@ -670,6 +671,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: Thrust
+--- !u!114 &593655480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593655473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &867764228
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,13 +853,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.020802734, y: 0.000010529226, z: 0.0005060366, w: 0.99978346}
-  m_LocalPosition: {x: -0.75, y: 3.42, z: -17.87}
+  m_LocalRotation: {x: -0.0438588, y: -0.0000011461176, z: 0.00050614495, w: 0.9990376}
+  m_LocalPosition: {x: -0.75, y: 0.89, z: -17.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -2.384, y: 0, z: 0.058}
+  m_LocalEulerAnglesHint: {x: -5.027, y: -0.003, z: 0.058}
 --- !u!1 &1210088498
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,8 +887,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210088498}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.630476, y: 0.06400001, z: 0}
-  m_LocalScale: {x: 0.6304767, y: 1.4929, z: 0.68485194}
+  m_LocalPosition: {x: -0.525, y: 0.06400001, z: 0}
+  m_LocalScale: {x: 0.30186442, y: 1.4929, z: 0.264439}
   m_Children: []
   m_Father: {fileID: 1985838497}
   m_RootOrder: 1
@@ -1129,8 +1143,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338186781}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.63047695, y: 0.06400001, z: 0}
-  m_LocalScale: {x: 0.6304767, y: 1.4929, z: 0.68485194}
+  m_LocalPosition: {x: 0.525, y: 0.06400001, z: 0}
+  m_LocalScale: {x: 0.30186442, y: 1.4929, z: 0.264439}
   m_Children: []
   m_Father: {fileID: 1985838497}
   m_RootOrder: 2
@@ -1235,8 +1249,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -17, y: 15}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -17, y: 28}
+  m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1382430214
 MonoBehaviour:
@@ -1614,13 +1628,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985838496}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 2
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 56
   m_CollisionDetection: 0
 --- !u!114 &1985838499
 MonoBehaviour:
@@ -1634,7 +1648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8d9b226872cbbf4597ec8d66b4ba5a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thrustSpeed: 10000
+  thrustSpeed: 1130
   rotateSpeed: 400
 --- !u!1 &2112982590
 GameObject:
@@ -1779,7 +1793,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 7
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
