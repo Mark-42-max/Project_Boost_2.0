@@ -6,6 +6,7 @@ using UnityEngine;
 public class ObstacleMoveY : MonoBehaviour
 {
     [SerializeField] Vector3 initial;
+    [SerializeField] private float temp = 3.0f;
     private float factor;
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,6 @@ public class ObstacleMoveY : MonoBehaviour
     void Update()
     {
         factor = Mathf.Sin((2 * Mathf.PI / 2) * Time.time);
-        transform.position = new Vector3(initial.x * factor, initial.y * factor, initial.z);
+        transform.position = new Vector3(initial.x, initial.y + temp * factor, initial.z);
     }
 }
