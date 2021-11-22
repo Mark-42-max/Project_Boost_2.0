@@ -367,8 +367,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104387173}
   m_LocalRotation: {x: -0, y: -0, z: -0.33721578, w: 0.94142747}
-  m_LocalPosition: {x: -14.562124, y: 5.4662504, z: 25.700378}
-  m_LocalScale: {x: 1, y: 16.683569, z: 20.68963}
+  m_LocalPosition: {x: -14.4, y: 5.3, z: 25.700378}
+  m_LocalScale: {x: 1, y: 23.153456, z: 20.68963}
   m_Children: []
   m_Father: {fileID: 427323612}
   m_RootOrder: 1
@@ -564,7 +564,7 @@ Transform:
   - {fileID: 857858119}
   - {fileID: 1538687273}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &246938718
 GameObject:
@@ -663,7 +663,7 @@ RectTransform:
   - {fileID: 100950140}
   - {fileID: 797733370}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -709,7 +709,7 @@ Transform:
   - {fileID: 694648764}
   - {fileID: 1653600847}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &463667839
 GameObject:
@@ -11573,7 +11573,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 176.358, y: 0.6000061, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -17870,7 +17870,7 @@ Transform:
   - {fileID: 463667842}
   - {fileID: 518503922}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1985838498
 Rigidbody:
@@ -18273,7 +18273,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1121575175491946938, guid: 7de9cd0121ebd554c80bb93ed08c714a, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1121575175491946938, guid: 7de9cd0121ebd554c80bb93ed08c714a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18328,6 +18328,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 246938722}
     m_Modifications:
+    - target: {fileID: 2938135545195479732, guid: ff38df17e38dd8340858864bb15c12ba, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1985838499}
     - target: {fileID: 2938135545195479733, guid: ff38df17e38dd8340858864bb15c12ba, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

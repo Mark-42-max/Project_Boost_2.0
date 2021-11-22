@@ -575,6 +575,7 @@ GameObject:
   - component: {fileID: 154176282}
   - component: {fileID: 154176281}
   - component: {fileID: 154176280}
+  - component: {fileID: 154176284}
   m_Layer: 0
   m_Name: 'Finish '
   m_TagString: Enemy
@@ -652,7 +653,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154176279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.35, y: -0.45, z: 5}
+  m_LocalPosition: {x: -6.46, y: -0.45, z: 5}
   m_LocalScale: {x: 6.004381, y: 0.7521475, z: 5.5657067}
   m_Children:
   - {fileID: 593006914}
@@ -661,6 +662,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &154176284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154176279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe72ebd3eb9403245b8049be3b70ffa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initial: {x: 0, y: 0, z: 0}
+  temp: 3
 --- !u!1 &246938718
 GameObject:
   m_ObjectHideFlags: 0
@@ -11690,7 +11705,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 726152199}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1985838499}
+        m_TargetAssemblyTypeName: RocketMove, Assembly-CSharp
+        m_MethodName: ToMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &726152199
 MonoBehaviour:
   m_ObjectHideFlags: 0

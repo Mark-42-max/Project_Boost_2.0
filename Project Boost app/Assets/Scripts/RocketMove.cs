@@ -181,4 +181,9 @@ public class RocketMove : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void ToMainMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }
