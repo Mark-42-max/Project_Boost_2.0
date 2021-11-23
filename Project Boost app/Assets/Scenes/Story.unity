@@ -334,12 +334,12 @@ MonoBehaviour:
   delay: 0.05
   fullTxt: 'Year 2050. Humanity has reached type III civilization. Population flux
     lead humanity to establish cities in Mars too. Due to that the route from Earth
-    to Mars is used frequently. This caused pollution of the route ausing it to be
-    blocked. Now the federation has organized a cleaning process of the route under
-    the name ''PROJECT BOOST''. But the route is extremely dangerous as it''s almost
-    blocked by broken rocket parts, asteroids and other obstacles. A rookie astronaut
-    is selected for the expedition through this perilous path so the federation can
-    organize a proper cleansing process. '
+    to Mars is used frequently. This caused pollution of the route causing it to
+    be blocked. Now the federation has organized a cleaning process of the route
+    under the name ''PROJECT BOOST''. But the route is extremely dangerous as it''s
+    almost blocked by broken rocket parts, asteroids and other obstacles. A rookie
+    astronaut is selected for the expedition through this perilous path so the federation
+    can organize a proper cleansing process. '
 --- !u!1 &761686351
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,7 +587,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

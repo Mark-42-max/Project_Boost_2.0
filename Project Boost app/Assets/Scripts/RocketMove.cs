@@ -29,8 +29,6 @@ public class RocketMove : MonoBehaviour
         rb.freezeRotation = false;
         audioSource = gameObject.GetComponent<AudioSource>();
         fuel.text = "Fuel: " + fuelNum.ToString();
-        Debug.Log(Mathf.Round(Mathf.Sin(Mathf.PI)));
-        Debug.Log((Mathf.Sin(Mathf.Epsilon)).ToString());
     }
 
     // Update is called once per frame
@@ -184,6 +182,7 @@ public class RocketMove : MonoBehaviour
 
     public void ToMainMenu()
     {
+        PlayerPrefs.SetInt("level", SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene("Menu");
     }
 }
