@@ -17,7 +17,7 @@ public class Menu : MonoBehaviour
             Debug.Log(levelLoad);
             continuous.gameObject.SetActive(true);
         }
-        else
+        else if (PlayerPrefs.HasKey("level") || levelLoad == SceneManager.sceneCount - 1) 
         {
             continuous.gameObject.SetActive(false);
         }
